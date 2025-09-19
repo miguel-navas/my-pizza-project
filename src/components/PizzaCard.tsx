@@ -22,14 +22,13 @@ const PizzaCard: React.FC<PizzaCardProps> = ({ pizza }) => {
 
   const handleAddToCart = () => {
     addToCart({
-      pizza: {
-        id: pizza.id,
-        name: pizza.name,
-        image: pizza.image,
-        size: pizza.size,
-        price: pizza.price
-      },
-      quantity: 1
+      id: `${pizza.id}-${pizza.size}`,
+      name: pizza.name,
+      image: pizza.image,
+      price: pizza.price,
+      type: 'pizza',
+      size: pizza.size,
+      description: `Tamanho: ${pizza.size}`
     });
   };
 

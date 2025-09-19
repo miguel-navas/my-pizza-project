@@ -1,7 +1,4 @@
-import { faker } from '@faker-js/faker';
 import { Pizza, PizzaCategory } from '../types/Pizza';
-
-faker.locale = 'pt_BR';
 
 export const pizzaCategories: PizzaCategory[] = [
   {
